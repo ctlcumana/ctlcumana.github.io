@@ -1,5 +1,5 @@
-(function($) { 
-"use strict"; 
+(function($) {
+"use strict";
 /*-----------------------------------------------------------------------------------*/
 /*	OWL CAROUSEL
 /*-----------------------------------------------------------------------------------*/
@@ -164,7 +164,7 @@ $('.blog-carousel').owlCarousel({
         }
     }
 });
-})(jQuery); 
+})(jQuery);
 /*-----------------------------------------------------------------------------------*/
 /*	LOADING
 /*-----------------------------------------------------------------------------------*/
@@ -172,12 +172,12 @@ $(window).load(function() {
         $(".carousel-wrapper:not(.wow)").css("visibility", "visible");
         $(".circle-progress-wrapper strong").css("visibility", "visible");
         $(".basic-carousel").css("visibility", "visible");
-        
+
         $('#status').fadeOut();
         $('#preloader').delay(350).fadeOut('slow');
         $('body').delay(350).css({
             'overflow': 'visible'
-        }); 
+        });
         /*-----------------------------------------------------------------------------------*/
 		/*	CIRCLE PROGRESS
 		/*-----------------------------------------------------------------------------------*/
@@ -195,9 +195,9 @@ $(window).load(function() {
 		        bar.setText((bar.value() * 100).toFixed(0));
 		    }
 		    });
-		
+
 		    circle1.animate(0.4);
-			
+
 			var circle2 = new ProgressBar.Circle('.circle.second', {
 		        color: '#53cfc2',
 		        trailColor: 'rgba(255,255,255,0.1)',
@@ -212,9 +212,9 @@ $(window).load(function() {
 		        bar.setText((bar.value() * 100).toFixed(0));
 		    }
 		    });
-		
+
 		    circle2.animate(0.8);
-		    
+
 		    var circle3 = new ProgressBar.Circle('.circle.third', {
 		        color: '#ef6578',
 		        trailColor: 'rgba(255,255,255,0.1)',
@@ -229,9 +229,9 @@ $(window).load(function() {
 		        bar.setText((bar.value() * 100).toFixed(0));
 		    }
 		    });
-		
+
 		    circle3.animate(0.34);
-		    
+
 		    var circle4 = new ProgressBar.Circle('.circle.fourth', {
 		        color: '#67b7d4',
 		        trailColor: 'rgba(255,255,255,0.1)',
@@ -246,7 +246,7 @@ $(window).load(function() {
 		        bar.setText((bar.value() * 100).toFixed(0));
 		    }
 		    });
-		
+
 		    circle4.animate(0.45);
 });
 $(document).ready(function() {
@@ -263,11 +263,11 @@ $(document).ready(function() {
 			        Minutes: { color: "#ef6578" },
 			        Seconds: { color: "#67b7d4" }
     			}
-	});	
+	});
 	$(window).resize(function(){
 		$('.countdown').TimeCircles().rebuild();
 	});
-	
+
 	/*-----------------------------------------------------------------------------------*/
 	/* WIDTH CLASS
 	/*-----------------------------------------------------------------------------------*/
@@ -518,7 +518,7 @@ $(document).ready(function() {
 	/*	DRIBBBLE
 	/*-----------------------------------------------------------------------------------*/
 
-    
+
      // NOTE: Don't use this token, replace it with your own client access token.
     $.jribbble.setToken('109e2a3f94b101835d570ac92e91f69953dc3f1c1d0169faf71079d7ace0633e');
 
@@ -627,7 +627,6 @@ $(function() {
     jQuery('.btn-load-more').click(function() {
         var url = $(this).attr('href'),
             $this = $(this);
-
         $this.text('Loading...').addClass('btn-disabled');
         jQuery.get(url, function(data) {
             var $data = jQuery(data).find('.portfolio-grid .isotope .item');
@@ -707,7 +706,7 @@ $(function() {
     });
     $gridviewcol2.imagesLoaded(function() {
         $gridviewcol2.isotope('layout');
-    });    
+    });
     /*-----------------------------------------------------------------------------------*/
 	/*	SCROLL NAVIGATION HIGHLIGHT
 	/*-----------------------------------------------------------------------------------*/
